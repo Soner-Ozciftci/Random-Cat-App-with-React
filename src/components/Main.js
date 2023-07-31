@@ -8,6 +8,7 @@ const Main = () => {
         <div className="box">
           <h2>Enjoy the Cats</h2>
           <img src="https://play-lh.googleusercontent.com/AmKSpZt_rynhOO0ID1eS0gqeW3DFzoH6KNZkAAgepQ0t9MDRQTmil-nlY5GqkZ_7El0" />
+        <button>Click Me</button>
         </div>
       </div>
     </>
