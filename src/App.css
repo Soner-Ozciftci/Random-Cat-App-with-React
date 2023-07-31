@@ -23,3 +23,16 @@ body{
     text-align: center;
     flex-direction: column;
 }
+img{
+    width: 400px;
+    height: auto;
+}
+h2{
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+}
+button{
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px 40px;
+}

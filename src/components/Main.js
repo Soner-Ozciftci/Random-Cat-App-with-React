@@ -2,13 +2,23 @@ import React from "react";
 import { useState } from "react";
 
 const Main = () => {
+
+const [imgUrl,setImgUrl] = useState("");
+const callImg = ()=>{
+    fetch("https://api.thecatapi.com/v1/images/search")
+    .then(res => res.json())
+    .then(data => setImgUrl(data[0].url))
+}
+
+
+
   return (
     <>
       <div className="container">
         <div className="box">
           <h2>Enjoy the Cats</h2>
-          <img src="https://play-lh.googleusercontent.com/AmKSpZt_rynhOO0ID1eS0gqeW3DFzoH6KNZkAAgepQ0t9MDRQTmil-nlY5GqkZ_7El0" />
-        <button>Click Me</button>
+          <img src={imgUrl}/>
+        <button onClick={()=> callImg()}>Click Me</button>
         </div>
       </div>
     </>
